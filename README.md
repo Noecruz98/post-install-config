@@ -45,20 +45,5 @@ This guide walks you through the post-install configuration of osTicket on a Win
    - Customer Service
 3. Assign agents to departments.
 
----
 
-## Save This Guide to Your Repository
-To save this guide to your GitHub repository, follow these steps:
 
-```bash
-# Create a README.md file with this guide
-echo "# osTicket Post-Install Configuration Guide (Windows)" > README.md
-
-# Stage the file
-git add README.md
-
-# Commit the file
-git commit -m "Add osTicket Post-Install Configuration Guide"
-
-# Push to your GitHub repository
-git push origin main
