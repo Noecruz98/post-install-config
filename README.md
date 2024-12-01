@@ -1,5 +1,9 @@
 # post-install-config
 
+<p align="center">
+<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+</p>
+
 # osTicket Post-Install Configuration Guide (Windows)
 
 This guide walks you through the post-install configuration of osTicket on a Windows environment.
