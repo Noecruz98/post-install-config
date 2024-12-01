@@ -2,15 +2,63 @@
 
 # osTicket Post-Install Configuration Guide (Windows)
 
-This guide provides comprehensive post-install configuration instructions for osTicket on a Windows system. Follow these steps to ensure your system is secure and operational.
+This guide walks you through the post-install configuration of osTicket on a Windows environment.
+
+## Step 1: Login to Admin Panel
+1. Open your browser and go to your osTicket URL (e.g., `http://localhost/osTicket` or your server’s IP address).
+2. Log in using the credentials you created during the installation.
 
 ---
 
-## Step 1: Secure Your Installation
+## Step 2: Configure System Settings
+1. Go to **Admin Panel > Settings > System**.
+2. Fill out the required fields:
+   - **Helpdesk Name**: Enter a name for your helpdesk.
+   - **Default Email**: Specify the email address used for outgoing emails.
+3. Save your changes.
 
-1. **Remove the Setup Directory**:
-   After installation, remove the `setup` folder to prevent unauthorized access.
+---
 
-   ### Command (Windows Command Prompt):
-   ```cmd
-   del C:\xampp\htdocs\osTicket\upload\setup
+## Step 3: Configure Email Settings
+1. Navigate to **Admin Panel > Emails > Email Settings**.
+2. Add and configure email addresses for:
+   - Outgoing email (SMTP).
+   - Incoming email (IMAP/POP).
+3. Test and ensure email functionality is working.
+
+---
+
+## Step 4: Create Help Topics
+1. Go to **Admin Panel > Manage > Help Topics**.
+2. Add help topics that categorize user issues, such as:
+   - Technical Support
+   - Billing Inquiry
+   - General Question
+3. Save the topics.
+
+---
+
+## Step 5: Set Up Staff and Departments
+1. Navigate to **Admin Panel > Agents > Add New Agent** to create agent accounts.
+2. Go to **Admin Panel > Agents > Departments** to create departments like:
+   - IT Support
+   - Customer Service
+3. Assign agents to departments.
+
+---
+
+## Save This Guide to Your Repository
+To save this guide to your GitHub repository, follow these steps:
+
+```bash
+# Create a README.md file with this guide
+echo "# osTicket Post-Install Configuration Guide (Windows)" > README.md
+
+# Stage the file
+git add README.md
+
+# Commit the file
+git commit -m "Add osTicket Post-Install Configuration Guide"
+
+# Push to your GitHub repository
+git push origin main
